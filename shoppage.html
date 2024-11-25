@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farm Produce</title>
+    <link rel="stylesheet" href="shoppage.css">
+</head>
+<body>
+
+<header>
+    <div class="top-bar">
+        <span>📞 08100153061</span>
+        <span>igbinobaqueen3@gmail.com</span>
+    </div>
+    <nav>
+        <div class="logo">Farm</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="shoppage.html">Shop</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="nav-right">
+            <input type="text" placeholder="Search...">
+            <button>Search</button>
+            <a href="#">Wishlist</a>
+            <a href="register.html">Register</a>
+            <a href="loginpage.html">Login</a>
+        </div>
+    </nav>
+</header>
+
+<!-- Categories -->
+<section class="categories">
+    <h2>Shop Our Organic Products</h2>
+    <div class="category-list">
+        <div class="category-item" onclick="showCategory('vegetables')">Vegetables</div>
+        <div class="category-item" onclick="showCategory('fruits')">Fruits</div>
+        <div class="category-item" onclick="showCategory('birds')">Birds</div>
+        <div class="category-item" onclick="showCategory('fish')">Fish</div>
+        <div class="category-item" onclick="showCategory('eggs')">Eggs</div>
+        <div class="category-item" onclick="showCategory('meat')">Meat</div>
+        <div class="category-item" onclick="showCategory('tubers')">Tubers</div>
+    </div>
+</section>
+
+
+<!-- Products and search -->
+<section class="products">
+    <div class="search-bar">
+        <input type="text" id="categorySearch" placeholder="Search in this category..." oninput="filterProducts()">
+    </div>
+    <div id="product-grid" class="product-grid"></div>
+</section>
+<section class="products">
+    <div id="product-grid" class="product-grid">
+        <p>Select a category to view items.</p>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 Farmers Organic Store. All Rights Reserved.</p>
+</footer>
+
+<script src="shoppage.js"></script>
+</body>
+</html>
